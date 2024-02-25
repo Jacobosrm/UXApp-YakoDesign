@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="UXApp_YakoDesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="102"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAR-YT-cmK">
+                        <rect key="frame" x="5" y="5" width="340" height="92"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Proyect" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1c-ix-bbr">
+                                <rect key="frame" x="15" y="25" width="310" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Proyect" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yD-I9-5vj">
+                                <rect key="frame" x="15" y="45.333333333333336" width="310" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cLh-gk-GxY">
+                                <rect key="frame" x="15" y="74.666666666666671" width="265" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="ioP-Rk-9xH"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsZ-C8-EqV">
+                                <rect key="frame" x="290" y="71.333333333333329" width="35" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Cow-ae-yDt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="q1c-ix-bbr" secondAttribute="trailing" constant="15" id="446-mB-Tcs"/>
+                            <constraint firstItem="TsZ-C8-EqV" firstAttribute="leading" secondItem="cLh-gk-GxY" secondAttribute="trailing" constant="10" id="5eB-by-z1q"/>
+                            <constraint firstItem="9yD-I9-5vj" firstAttribute="top" secondItem="q1c-ix-bbr" secondAttribute="bottom" constant="1" id="9rt-mM-4fS"/>
+                            <constraint firstItem="q1c-ix-bbr" firstAttribute="leading" secondItem="jAR-YT-cmK" secondAttribute="leading" constant="15" id="CBq-4l-M6p"/>
+                            <constraint firstItem="TsZ-C8-EqV" firstAttribute="centerY" secondItem="cLh-gk-GxY" secondAttribute="centerY" id="FEI-U0-PXm"/>
+                            <constraint firstItem="cLh-gk-GxY" firstAttribute="top" secondItem="9yD-I9-5vj" secondAttribute="bottom" constant="15" id="PPf-JA-9Nw"/>
+                            <constraint firstItem="9yD-I9-5vj" firstAttribute="leading" secondItem="jAR-YT-cmK" secondAttribute="leading" constant="15" id="UoH-Bd-Oq6"/>
+                            <constraint firstAttribute="trailing" secondItem="9yD-I9-5vj" secondAttribute="trailing" constant="15" id="ewc-ll-X1J"/>
+                            <constraint firstAttribute="trailing" secondItem="TsZ-C8-EqV" secondAttribute="trailing" constant="15" id="jTP-MZ-6sU"/>
+                            <constraint firstItem="q1c-ix-bbr" firstAttribute="top" secondItem="jAR-YT-cmK" secondAttribute="top" constant="25" id="y1D-gt-tVm"/>
+                            <constraint firstItem="cLh-gk-GxY" firstAttribute="leading" secondItem="jAR-YT-cmK" secondAttribute="leading" constant="15" id="yXN-gq-495"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jAR-YT-cmK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PcO-ZM-Jw5"/>
+                <constraint firstItem="jAR-YT-cmK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="acn-zx-bu1"/>
+                <constraint firstAttribute="bottom" secondItem="jAR-YT-cmK" secondAttribute="bottom" constant="5" id="tau-u2-cgC"/>
+                <constraint firstAttribute="trailing" secondItem="jAR-YT-cmK" secondAttribute="trailing" constant="5" id="zeA-Jh-a7b"/>
+            </constraints>
+            <size key="customSize" width="355" height="93"/>
+            <connections>
+                <outlet property="contentCollectionView" destination="jAR-YT-cmK" id="UUJ-yx-AWZ"/>
+                <outlet property="dateProyect" destination="9yD-I9-5vj" id="lH9-n4-196"/>
+                <outlet property="percentageProgressLabel" destination="TsZ-C8-EqV" id="CSm-e9-xHG"/>
+                <outlet property="progressProyect" destination="cLh-gk-GxY" id="Jh1-CF-GWP"/>
+                <outlet property="titleProyect" destination="q1c-ix-bbr" id="rvp-6M-gAE"/>
+            </connections>
+            <point key="canvasLocation" x="268.70229007633588" y="3.5211267605633805"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

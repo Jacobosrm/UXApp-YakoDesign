@@ -13,6 +13,13 @@
 		94EF9EFB2B73D1460060569A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EF9EF92B73D1460060569A /* Main.storyboard */; };
 		94EF9EFD2B73D1480060569A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EF9EFC2B73D1480060569A /* Assets.xcassets */; };
 		94EF9F002B73D1480060569A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EF9EFE2B73D1480060569A /* LaunchScreen.storyboard */; };
+		94EF9F0E2B73D1E50060569A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF9F092B73D1E50060569A /* HomeViewController.swift */; };
+		94EF9F0F2B73D1E50060569A /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EF9F0A2B73D1E50060569A /* HomeView.xib */; };
+		94EF9F112B73D1E50060569A /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF9F0D2B73D1E50060569A /* MyCollectionViewCell.swift */; };
+		94EF9F142B75421F0060569A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF9F122B75421F0060569A /* MyTableViewCell.swift */; };
+		94EF9F152B75421F0060569A /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EF9F132B75421F0060569A /* MyTableViewCell.xib */; };
+		94FE16422B866B04007DA3BF /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FE16412B866B04007DA3BF /* MyCollectionViewCell.xib */; };
+		94FE16442B87E3B7007DA3BF /* ProfilePhotoSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE16432B87E3B7007DA3BF /* ProfilePhotoSectionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		94EF9EFC2B73D1480060569A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94EF9EFF2B73D1480060569A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94EF9F012B73D1480060569A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94EF9F092B73D1E50060569A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		94EF9F0A2B73D1E50060569A /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		94EF9F0D2B73D1E50060569A /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		94EF9F122B75421F0060569A /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		94EF9F132B75421F0060569A /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		94FE16412B866B04007DA3BF /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		94FE16432B87E3B7007DA3BF /* ProfilePhotoSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 		94EF9EF22B73D1460060569A /* UXApp-YakoDesign */ = {
 			isa = PBXGroup;
 			children = (
+				94EF9F082B73D1E50060569A /* Home */,
+				94EF9F072B73D1E50060569A /* Login */,
 				94EF9EF32B73D1460060569A /* AppDelegate.swift */,
 				94EF9EF52B73D1460060569A /* SceneDelegate.swift */,
 				94EF9EF72B73D1460060569A /* ViewController.swift */,
@@ -65,6 +81,35 @@
 				94EF9F012B73D1480060569A /* Info.plist */,
 			);
 			path = "UXApp-YakoDesign";
+			sourceTree = "<group>";
+		};
+		94EF9F072B73D1E50060569A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		94EF9F082B73D1E50060569A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				94EF9F092B73D1E50060569A /* HomeViewController.swift */,
+				94EF9F0A2B73D1E50060569A /* HomeView.xib */,
+				94EF9F0B2B73D1E50060569A /* CustomCell */,
+				94FE16432B87E3B7007DA3BF /* ProfilePhotoSectionVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		94EF9F0B2B73D1E50060569A /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				94EF9F0D2B73D1E50060569A /* MyCollectionViewCell.swift */,
+				94FE16412B866B04007DA3BF /* MyCollectionViewCell.xib */,
+				94EF9F122B75421F0060569A /* MyTableViewCell.swift */,
+				94EF9F132B75421F0060569A /* MyTableViewCell.xib */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +170,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EF9F152B75421F0060569A /* MyTableViewCell.xib in Resources */,
 				94EF9F002B73D1480060569A /* LaunchScreen.storyboard in Resources */,
+				94FE16422B866B04007DA3BF /* MyCollectionViewCell.xib in Resources */,
+				94EF9F0F2B73D1E50060569A /* HomeView.xib in Resources */,
 				94EF9EFD2B73D1480060569A /* Assets.xcassets in Resources */,
 				94EF9EFB2B73D1460060569A /* Main.storyboard in Resources */,
 			);
@@ -139,8 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EF9EF82B73D1460060569A /* ViewController.swift in Sources */,
+				94EF9F112B73D1E50060569A /* MyCollectionViewCell.swift in Sources */,
 				94EF9EF42B73D1460060569A /* AppDelegate.swift in Sources */,
+				94FE16442B87E3B7007DA3BF /* ProfilePhotoSectionVC.swift in Sources */,
 				94EF9EF62B73D1460060569A /* SceneDelegate.swift in Sources */,
+				94EF9F0E2B73D1E50060569A /* HomeViewController.swift in Sources */,
+				94EF9F142B75421F0060569A /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +349,7 @@
 				INFOPLIST_FILE = "UXApp-YakoDesign/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +359,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobosramirezm.UXApp-YakoDesign";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +380,7 @@
 				INFOPLIST_FILE = "UXApp-YakoDesign/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +390,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobosramirezm.UXApp-YakoDesign";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
