@@ -1,9 +1,3 @@
-//
-//  MyCollectionViewCell.swift
-//  UXApp-iOS-Yako
-//
-//  Created by Jacobo Ramirez on 7/02/24.
-//
 
 import UIKit
 
@@ -32,6 +26,17 @@ class MyCollectionViewCell: UICollectionViewCell {
         
         updateProgressLabel()
     }
+    
+    func configureMyCollectionViewCell(with proyect: Proyect) {
+        titleProyect.text = proyect.title
+        dateProyect.text = proyect.date
+
+        let progressValue = min(1.0, max(0.0, proyect.progress))
+        progressProyect.progress = Float(proyect.progress)
+        progressColor(progressValue: progressValue)
+        updateProgressLabel()
+    }
+
     
     func progressColor(progressValue: Double){
         if progressValue <= 0.33 {

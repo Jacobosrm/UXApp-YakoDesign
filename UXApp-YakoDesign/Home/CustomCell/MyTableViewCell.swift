@@ -1,20 +1,14 @@
-//
-//  MyTableViewCell.swift
-//  UXApp-YakoDesign
-//
-//  Created by Jacobo Ramirez on 8/02/24.
-//
 
 import UIKit
 
 class MyTableViewCell: UITableViewCell {
-    
     
     @IBOutlet var contentTableView: UIView!{
         didSet{
             contentTableView.backgroundColor = .clear
         }
     }
+    
     @IBOutlet weak var contentTaskView: UIView!{
         didSet{
             contentTaskView.backgroundColor = .systemGray6
@@ -22,6 +16,7 @@ class MyTableViewCell: UITableViewCell {
             contentTaskView.layer.masksToBounds = true
         }
     }
+    
     @IBOutlet weak var checkButton: UIButton! {
         didSet {
             
@@ -34,6 +29,7 @@ class MyTableViewCell: UITableViewCell {
             checkButton.addTarget(self, action: #selector(checkButtonTapped), for: .touchUpInside)
         }
     }
+    
     @IBOutlet weak var activityLabel: UILabel!
     
     @IBOutlet weak var timeTakeLabel: UILabel!{
@@ -41,23 +37,18 @@ class MyTableViewCell: UITableViewCell {
             timeTakeLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         }
     }
-    
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         self.backgroundColor = .clear
     }
-
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
     
     @objc func checkButtonTapped() {
-            checkButton.isSelected = !checkButton.isSelected
-        }
+        checkButton.isSelected = !checkButton.isSelected
+    }
     
+    func configureMyTableViewCell(with activity: Activity){
+        timeTakeLabel.text = activity.hour
+        activityLabel?.text = activity.title
+    }
 }
